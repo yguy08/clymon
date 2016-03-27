@@ -4,6 +4,7 @@ var http       = require('http').Server(app);
 var io         = require('socket.io')(http);
 var bodyParser = require('body-parser');
 
+
 app.use(express.static(__dirname + "/public"));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(bodyParser.json());
@@ -20,6 +21,11 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
-  console.log("Server running on port 3000");
+http.listen(5000, function(){
+  console.log("Server running on port 5000");
 });
+
+//local host
+/*http.listen(3000, function(){
+  console.log("Server running on port 3000");
+});*/
