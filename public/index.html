@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" >
+
+   <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Clymon</title>
+
+      <link rel="icon"
+      type="image/ico"
+      href="/img/clymon-icon.ico">
+
+
+      <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+      <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+   <body role="document" ng-controller="appController">
+
+     <div class="container">
+       <div id="logo-container" class="container">
+         <img src="/img/clymon-logo.jpg" class="img-responsive center-block" alt="Responsive image">
+      </div>
+
+        <div id="chat-container" class="container text-center">
+          <ul id="messages" class="list-group"></ul>
+          <form id="chat-form" class="form-inline">
+             <div class="form-group">
+               <input type="text" class="form-control" id="m" autocomplete="off">
+             </div>
+             <button type="submit" class="btn btn-default">Send</button>
+           </form>
+         </div>
+
+       </div>
+
+       <!-- load external and custom javascript -->
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+      <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="/bower_components/angular/angular.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/clymon.js"></script>
+    </body>
+</html>
