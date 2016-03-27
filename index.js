@@ -22,15 +22,6 @@ io.on('connection', function(socket){
   });
 });
 
-/*http.listen(5000, function(){
-  console.log("Server running on port 5000");
-});*/
-
 http.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+  console.log('Running on port', app.get('port'));
 });
-
-//local host
-/*http.listen(3000, function(){
-  console.log("Server running on port 3000");
-});*/
